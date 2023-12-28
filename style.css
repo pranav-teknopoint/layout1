@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --green: #3d8168;
+  --darkgreen: #1b402e;
+  --offwhite: #f5f5f5;
+  --brown: #4a4040;
+  --grey: #d9d9d9;
+  --creme: #f3eae3;
+}
+
+body{  
+  background-color: var(--creme);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 966px;
+  background-color: var(--offwhite);
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container-left{
+  width: 50%;
+}
+
+.container-left picture{
+  width: 100%;
+}
+
+.container-right{
+  width: 50%;
+  padding: 45px 73px 109px 69px;
+}
+
+.container-right .title {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  font-weight: 400;
+  color: var(--brown);
+}
+
+.container-right h1 {
+  margin-top: 27px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: black;
+  line-height: 39.46px;
+  max-width: 200px;
+}
+
+.container-right .text {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 14px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--brown);
+  line-height: 24.38px;
+}
+
+.container-right .price{
+  /* width: 343px; */
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--green);
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.container-right .price sup{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--brown);
+  text-decoration: line-through;
+}
+
+.container-right .button {
+  margin-top: 40px;
+  background-color: var(--green);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-right .button:hover {
+  background-color: var(--darkgreen);
+  transition: ease-in-out 300ms;
+}
+
+.container-right .button img {
+  padding-left: 60px ;
+  padding-top: 15px;
+  padding-bottom: 19px;
+}
+
+.container-right .button span {
+  padding-left: 30px;
+  padding-right: 85px;
+  font-size: 14px;
+  color: var(--offwhite);
+  font-weight: 700;
+}
+.container-right a{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .main{    
+    height: auto;
+  }
+
+  .wrapper {
+    margin: 26px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-left{
+    width: 100%;
+  }
+
+  .container-left picture {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .container-right{
+    width: 100%;
+    padding: 28px 15px 41px 17px;
+  }
+
+  .container-right .title {
+    font-size: 12px;
+    letter-spacing: 3.6px;
+    line-height: 19px;
+  }
+
+  .container-right h1{
+    line-height: 38px;
+    margin-top: 6px;
+    max-width: 290px;
+  }
+
+  .container-right .text{
+    line-height: 22px;
+    margin-top: 11px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .container-right .price{
+    line-height: 40px;
+    margin-top: 32px;
+    margin-bottom: 0px;
+  }
+
+  .container-right .button {
+    margin-top: 31px;
+  }
+}
